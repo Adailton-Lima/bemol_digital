@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cadastro de Cliente</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <!--bootstrap via CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+      <div class="container-fluid" style="width: 70%">
+      <form id="formulario" onsubmit="return salvar()">
+        <div style="text-align: center; padding-top: 20px; padding-bottom: 20px;">
+          <img src="/img">
+        </div>
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" autocomplete="off" class="form-control" id="cpf"  minlength="14" maxlength="14" onkeypress="$(this).mask('000.000.000-00')" placeholder="000.000.000-00" data-bs-toggle="tooltip" data-bs-placement="top" title="Este dado é usado como login de acesso." required>
+        </div>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome Completo</label>
+          <input type="text" pattern="[a-zA-Z\s]+$" autocomplete="off"  class="form-control" id="nome" maxlength="40" data-bs-toggle="tooltip" data-bs-placement="top" title="Este dado é usado para identificação do cliente. [numeros nao permitidos]" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" autocomplete="off"  class="form-control" id="email" maxlength="40" data-bs-toggle="tooltip" data-bs-placement="top" title="Este dado é usado para recuperação de senhas de acesso." required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="cep">CEP</label>
+          <input type="text" autocomplete="off"  class="form-control" id="cep" minlength="9" maxlength="9" onkeypress="$(this).mask('00000-000')" placeholder="00000-000" data-bs-toggle="tooltip" data-bs-placement="top" title="Com base no CEP informado, os demais dados são carregados automaticamente" required>
+          <div id="erro-cep"></div>
+        </div>
+        <div class="mb-3">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" class="form-control" id="logradouro" disabled>
+        </div>
+        <div class="row justify-content-start">
+          <div class="mb-3 col-6">
+            <label for="bairro">Bairro</label>
+            <input type="text" class="form-control" id="bairro" disabled>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="localidade">Cidade</label>
+            <input type="text" class="form-control" id="localidade" disabled>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="mb-3 col-6">
+            <label for="uf">Estado</label>
+            <input type="text" class="form-control" id="uf" disabled>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="numero">Numero/Casa/Apto</label>
+            <input type="text" autocomplete="off"  class="form-control" id="numero" maxlength="7" data-bs-toggle="tooltip" data-bs-placement="top" title="dados não numéricos permitidos [máximo: 7].">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="complemento">Complemento</label>
+          <input type="text" autocomplete="off"  class="form-control" id="complemento" maxlength="50" data-bs-toggle="tooltip" data-bs-placement="top" title="Inclua quadra, núcleo, bloco, apartamento e/ou outras informações importantes de localização do cliente.">
+        </div>
+        
+        <div >
+          <button type="submit" id="btnCadastrar" class="btn btn-primary" style="margin-right: 20px;" disabled>Cadastrar</button>
+          <button type="button" id="btnLimparCampos" class="btn btn-secondary">Limpar Campos</button>
+        </div>
+      </form>
+    </div>
+      
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+      <script src="/js"></script>
+    </body>
+</html>
