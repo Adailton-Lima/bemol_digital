@@ -1,0 +1,18 @@
+1. A solução deve ser disponibilizada em Cloud ou On-premise?
+R= Os dados poderiam ser disponibilizados via on-promisse caso a empresa possua uma equipe que garanta os recursos mais avançados de segurança para a proteção da infraestrutura existente. Caso contrário, devido ao cadastro conter dados sensíveis dos clientes como cpf e endereço, eu recomendaria cloud.
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa
+solução, responda qual ferramenta acreditas ser apropriada para o controle de
+tarefas da equipe, a ferramenta é ágil?
+R=De ferramentas gratuitas, eu citaria o trello. Criaria-se um quadro referente a qual feature/sistema seria trabalhado, incluia-se os membros da equipe e cada um ia definindo nas listas [to do, doing, done, ou outras] qual tarefa se responsabilizar.
+De ferramentas pagas, há o planner da microsoft, cuja idéia é a mesma.
+
+3. Você se sente capaz de liderar esta equipe? Por quê?
+R= Não. Acredito que para se chegar a liderar uma equipe, é necessário amadurecimento/experiência no que se propõe a fazer. Apesar de parecer algo simples, no meu entender, desenvolver um sistema ou uma parte dele, merece toda uma atenção em especial. Atualmente, eu procuro primeiro aprender com os mais experientes e consequentemente, aprimorar meus conhecimentos adquiridos até aqui, para que então, eu possa está mais preparado para os percalços possíveis no decorrer do projeto. 
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que
+seria?
+R=Se em relação ao meu projeto, separação do backEnd do FrontEnd. Devido ao pouco tempo tido pessoalmente devido ao meu trabalho, encapsulei toda a lógica da solução em um único projeto. Há também a questão de se necessário, ter incluido telefone no cadastro, visto que em algum momento, o usuario pode querer acessar via mobile e uma mensagem de texto confirmando o cadastro seria um feedback positivo.
+
+5. Acha válido esse desafio para o processo que está participando?
+R= Todo desafio é válido em nossa caminhada profissional. Não há sequer uma que não nos deparamos com alguma tecnologia,abordagem que seja diferente. Neste desafio por exemplo, tive que entender ou pelo menos buscado compreender o mínimo do C4 model. Até então, nem havia ouvido falar nele e sim somente nas famosas UML's.
